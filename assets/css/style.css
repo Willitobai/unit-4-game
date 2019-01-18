@@ -29,7 +29,7 @@ body {
 
 .bg-trans {
     background: rgba(0, 0, 0, 0.527) !important;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     margin: 0 auto;
 }
@@ -67,8 +67,12 @@ footer {
 
 /* personal add */
 
+
 #logo {
     display:inline-block;
+}
+#choose {
+    color:#fff;
 }
 #game {
     width:100%;

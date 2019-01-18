@@ -39,10 +39,10 @@ Character.prototype.counterAttack = function (Obj) {
 
 // Initialize all the characters
 function initCharacters() {
-    var luke = new Character("Luke Skywalker", 20, 20, 5, "./assets/images/lukeskywalker.png");
-    var vader = new Character("Darth Vader", 200, 50, 30, "./assets/images/yoda.png");
-    var obi = new Character("Obi-Wan Kenobi", 150, 15, 2, "./assets/images/trooper.jpeg");
-    var chew = new Character("Chewbacca", 180, 30, 12, "./assets/images/chewbacca.png");
+    var luke = new Character("Luke Skywalker", 100, 50, 5, "./assets/images/luke.jpeg");
+    var vader = new Character("yoda", 200, 50, 30, "./assets/images/yoda.jpg");
+    var obi = new Character("Trooper", 150, 15, 2, "./assets/images/trooper.jpg");
+    var chew = new Character("Chewbacca", 180, 30, 12, "./assets/images/chewbacca.jpg");
     charArray.push(luke, vader, obi, chew);
 }
 
@@ -76,7 +76,7 @@ function characterCards(divID) {
         $(divID + " img:last-child").attr("id", charArray[i].name);
         $(divID + " img:last-child").attr("class", "card-img-top");
         $(divID + " img:last-child").attr("src", charArray[i].pic);
-        $(divID + " img:last-child").attr("width", 150);
+        $(divID + " img:last-child").attr("width", 250);
         $(divID + " img:last-child").addClass("img-thumbnail");
         $(divID + " div:last-child").append(charArray[i].name + "<br>");
         $(divID + " div:last-child").append("HP: " + charArray[i].healthPoints);

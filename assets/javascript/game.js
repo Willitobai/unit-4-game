@@ -40,10 +40,10 @@ Character.prototype.counterAttack = function (Obj) {
 // Initialize all the characters
 function initCharacters() {
     var luke = new Character("Luke Skywalker", 100, 50, 5, "./assets/images/luke.jpeg");
-    var vader = new Character("yoda", 200, 50, 30, "./assets/images/yoda.jpg");
-    var obi = new Character("Trooper", 150, 15, 2, "./assets/images/trooper.jpg");
+    var trooper = new Character("Trooper", 150, 15, 2, "./assets/images/trooper.jpg");
     var chew = new Character("Chewbacca", 180, 30, 12, "./assets/images/chewbacca.jpg");
-    charArray.push(luke, vader, obi, chew);
+    var obi = new Character("yoda", 200, 50, 30, "./assets/images/yoda.jpg");
+    charArray.push(luke, trooper, chew, obi);
 }
 
 // "Save" the original attack value

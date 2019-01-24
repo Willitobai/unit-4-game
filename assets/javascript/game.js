@@ -1,3 +1,4 @@
+
 // Global variables
 var baseAttack = 0; // original attack strength
 var player; // holds the player Object
@@ -40,10 +41,10 @@ Character.prototype.counterAttack = function (Obj) {
 // Initialize all the characters
 function initCharacters() {
     var luke = new Character("Luke Skywalker", 100, 50, 5, "./assets/images/luke.jpeg");
-    var trooper = new Character("Trooper", 150, 15, 2, "./assets/images/trooper.jpg");
-    var chew = new Character("Chewbacca", 180, 30, 12, "./assets/images/chewbacca.jpg");
-    var obi = new Character("yoda", 200, 50, 30, "./assets/images/yoda.jpg");
-    charArray.push(luke, trooper, chew, obi);
+    var vader = new Character("Darth Vader", 150, 15, 2, "./assets/images/vader.jpg");
+    var obi = new Character("Obi-Wan Kenobi", 200, 50, 30, "./assets/images/obi.jpg");
+     var chew = new Character("Chewbacca", 180, 30, 12, "./assets/images/chewbacca.jpg");
+    charArray.push(luke, vader, obi, chew);
 }
 
 // "Save" the original attack value
@@ -106,7 +107,7 @@ function playAudio() {
 
 // Change the view from the first screen to the second screen
 function changeView() {
-    $("#firstScreen").empty();
+    $("#firstScreen").hide();
     $("#secondScreen").show();
 }
 
@@ -198,3 +199,6 @@ $(document).ready(function () {
     initCharacters();
     characterCards("#game");
 });
+
+
+
